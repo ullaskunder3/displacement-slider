@@ -1,0 +1,117 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: #222;
+
+}
+.nav-container{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(253, 253, 253);
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 0 20px;
+    transition: all .5s ease;
+}
+li a:hover{
+    background-color: #be8b8b;
+    transform: scale(1.1);
+    border-radius: .2rem;
+}
+
+.links::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width .3s;
+}
+.links:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+.rgbKineticSlider {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.rgbKineticSlider canvas {
+    position: absolute;
+    display: block;
+    top: 0 !important;
+    left: 0 !important;
+    transform: scale(1) !important;
+    overflow: hidden;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 50vh;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    transition: all 0.4s ease-in;
+}
+nav a:hover{
+    color: white;
+    transition: all 1s;
+    background-color: black;
+}
+nav a.next {
+    right: 20px;
+}
+nav a.prev {
+    left: 20px;
+}
+/* under construction */
+.tape {
+    font-size:3em;
+    margin: 10em 0 0;
+    height: 160px;
+    background-image: -webkit-linear-gradient(0deg,#222,transparent,#222),linear-gradient(transparent 30px, #ff0 30px), repeating-linear-gradient(45deg, transparent, transparent 35px, #ff0 35px, #ff0 70px);
+    background-image: -moz-linear-gradient(90deg,#222,transparent,#222),linear-gradient(transparent 30px, #ff0 30px), repeating-linear-gradient(45deg, transparent, transparent 35px, #ff0 35px, #ff0 70px);
+    background-image: -o-linear-gradient(90deg,#222,transparent,#222),linear-gradient(transparent 30px, #ff0 30px), repeating-linear-gradient(45deg, transparent, transparent 35px, #ff0 35px, #ff0 70px);
+    background-image: linear-gradient(90deg,#222,transparent,#222),linear-gradient(transparent 30px, #ff0 30px), repeating-linear-gradient(45deg, transparent, transparent 35px, #ff0 35px, #ff0 70px);
+    background-size: auto,auto 132px,auto;
+}
+.tape span{
+    cursor:default;
+    color:#222;
+    display:block;
+    padding:1em;
+    white-space:nowrap;
+}
+.tape p{
+    font-size: 20px;
+    margin: 50px 40%;
+    color:#ffffff;
+    text-align: center;
+}
+
+@media (min-width: 200px) and (max-width: 480px ) {
+    .nav-container {
+		margin-top: 0;
+		padding: .25em;
+		text-align: center;
+	}
+}
