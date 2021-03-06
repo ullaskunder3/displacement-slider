@@ -16,8 +16,8 @@ rgbKineticSlider = new rgbKineticSlider({
     itemsTitles: texts, // array of titles / subtitles
 
     // displacement images sources
-    backgroundDisplacementSprite: '/img/map/map-9.jpg', // slide displacement image 
-    cursorDisplacementSprite: '/img/map/DisplacementMap (2).png', // cursor displacement image
+    backgroundDisplacementSprite: './img/map/map-9.jpg', // slide displacement image 
+    cursorDisplacementSprite: './img/map/DisplacementMap (2).png', // cursor displacement image
 
     // cursor displacement effect 
     cursorImgEffect: true, // enable cursor effect
